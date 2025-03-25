@@ -67,12 +67,14 @@
                     <caption>Table Captions</caption>
                     <thead>
                         <tr>
-                            <th>Odd elem</th>
-                            <th>Even elem</th>
+                            <th>row elems</th>
+                            <th scope="col">Odd elem</th>
+                            <th scope="col">Even elem</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <th scope="row">1st row elem</th>
                             <td>
                                 elem1
                             </td>
@@ -81,6 +83,7 @@
                             </td>
                         </tr>
                         <tr>
+                            <th scope="row">2nd row elem</th>
                             <td>
                                 elem3
                             </td>
@@ -91,7 +94,7 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td colspan="2">End elem</td>
+                            <td colspan="3">End elem</td>
                         </tr>
                     </tfoot>
                 </table>
