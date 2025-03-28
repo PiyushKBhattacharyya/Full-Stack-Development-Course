@@ -17,21 +17,23 @@
     </head>
     <body>
         <main>
-            <section id="html">
-                <h1>Hello World!</h1>
-                <hr>
-                <h2>Learning HTML</h2>
-                <p>Welcome to the First Website</p>
-                <p>Hello There</p>
-                <hr>
-                <h3>This is basic HTML</h3>
-                <p>&nbsp;&nbsp;Spacing Before Line
-                    <br>br tag 
-                    <em>em tag <abbr title="abbreviation">abb tag</abbr></em>
-                    <br>br tag
-                    <strong>strong tag</strong>
-                </p>
-            </section>
+            <article>
+                <section id="html">
+                    <h1>Hello World!</h1>
+                    <hr>
+                    <h2>Learning HTML</h2>
+                    <p>Welcome to the First Website</p>
+                    <p>Hello There</p>
+                    <hr>
+                    <h3>This is basic HTML</h3>
+                    <p>&nbsp;&nbsp;Spacing Before Line
+                        <br>br tag 
+                        <em>em tag <abbr title="abbreviation">abb tag</abbr></em>
+                        <br>br tag
+                        <strong>strong tag</strong>
+                    </p>
+                </section>
+            </article>
             <hr>
             <section id="list">
                 <p> List
@@ -99,6 +101,59 @@
                     </tfoot>
                 </table>
             </sectiod>
+            <hr>
+            <section id="Form">
+                <h2>Form</h2>
+                    <form action="https://httpbin.org/get" method="get">
+                        <fieldset>
+                            <labe>FORM</labe>
+                            <p>
+                                
+                                <label for="fname">First Name</label>
+                                <input type="text"
+                                name="fname"
+                                id="fname"
+                                placeholder="Jane"
+                                autocomplete="on"
+                                required
+                                autofous>
+                            </p>
+                            <p>
+                                <label for="pass">First Name</label>
+                                <input type="password"
+                                name="pass"
+                                id="pass"
+                                placeholder="Password"
+                                required>
+                            </p>
+                            <p>
+                                <label for="phone">Phone Number</label>
+                                <input type="tel"
+                                    name="phone"
+                                id="phone"
+                                placeholder="80990 50919"
+                                pattern="[0-9]{5}-[0-9]{5}"
+                                required>
+                            </p>
+                            <p>
+                                <label for="opt">Options</label>
+                                <select name="opt" id="opt" multiple size="5">
+                                    <optgroup label="opt">
+                                        <option value="op1">OP1</option>
+                                        <option value="op2">OP2</option>
+                                    </optgroup>
+                                    <optgroup label="opt2">
+                                        <option value="op3" selected>op3</option>
+                                        <option value="op4">op4</option>
+                                        <option value="op5">op5</option>
+                                        <option value="op6">op6</option>
+                                    </optgroup>
+                                    <option value="other">Other</option>
+                                </select>
+                            </p>
+                    </fieldset>
+                </form>
+            </section>
             <hr>
             <p>Nav List</p>
             <nav>
